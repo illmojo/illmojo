@@ -36,3 +36,4 @@ if grep -q "\/sys\/class\/leds\/led1\/brightness" /etc/rc.local
     sudo sed -i -e '$i \sudo echo 0 | sudo tee /sys/class/leds/led1/brightness > /dev/null\n' /etc/rc.local
 fi
 echo "leds off"
+
